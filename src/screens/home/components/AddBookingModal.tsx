@@ -127,14 +127,14 @@ const AddBookingModal = ({
             errors={errors}
             fieldLabel="Event Location"
           />
+          <Text
+            style={[
+              styles.label,
+              { color: errors.confirmed_datetime ? '#F66D6D' : '#000' },
+            ]}>
+            Confirmed DateTime
+          </Text>
           <Pressable onPress={toggleDateModalVisible}>
-            <Text
-              style={[
-                styles.label,
-                { color: errors.confirmed_datetime ? '#F66D6D' : '#000' },
-              ]}>
-              Confirmed DateTime
-            </Text>
             <Text
               style={[
                 styles.input,
@@ -183,6 +183,7 @@ const styles = StyleSheet.create({
     paddingVertical: 16,
     paddingHorizontal: 12,
     marginVertical: 8,
+    color: '#000',
   },
   label: {
     paddingHorizontal: 12,

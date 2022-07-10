@@ -71,6 +71,7 @@ const styles = StyleSheet.create({
     paddingVertical: Platform.OS === 'ios' ? 16 : 12,
     paddingHorizontal: 12,
     marginVertical: 8,
+    color: '#000',
   },
   errorMsg: {
     color: '#F66D6D',
